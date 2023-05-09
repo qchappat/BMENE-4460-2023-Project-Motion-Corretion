@@ -6,9 +6,9 @@ BMENE 4460 (2023) Project by Zachary ABESSERA, Quentin CHAPPAT and Nikhil KUMAR 
 This is the GitHub repository for the Project 'MRI Motion Detection and Correction with Complex-value AFT-Net'.
 
 As the title already clearly illustrates, our project consists in detecting and correcting brain MRI scans of humans from the [fastMRI dataset](https://fastmri.med.nyu.edu/).
-The adding value of our project is that we use raw k-space data as input to correct MRI scans.
+The added value of our project is that we use raw k-space data as input to correct MRI scans.
 
-To do so, we first were able to simulate motion artefacts on our uncorrupted raw complex data by modifying the class `RandomMotion` of the package [TorchIO](https://torchio.readthedocs.io/transforms/augmentation.html#randommotion) that itselft does not take complex image as input.
+To do so, we first were able to simulate motion artefacts on our uncorrupted raw complex data by modifying the class `RandomMotion` of the package [TorchIO](https://torchio.readthedocs.io/transforms/augmentation.html#randommotion) that itself does not take complex images as input.
 
 Then, we made a data augmentation of our data by 2 (creating for each raw-uncorrupted-k-space a simulate-corrupted-k-space) and used this complete dataset as training data for our model.
 
@@ -26,7 +26,7 @@ After all the training, we analyzed the statistical significance of our results 
 
 The improvements and interest of our project are that we take raw-k-space as input which means there is no preprocessing needed, no detection of movement need and no lost of data (like the phase).
 
-The limitations of our models are that there in 2D and therefore our models has hard time correcting 3D motions. We think that if we were to use a 3D network, we could correct much more artefacts. If you are interested in performing this work, do not hesitate to contact qjc2002@columbia.edu (I will be interested to work with you on this).
+The limitations of our models are that there in 2D and therefore our models has hard time correcting 3D types of motion. We think that if we were to use a 3D network, we could correct much more artefacts. If you are interested in performing this work, do not hesitate to contact qjc2002@columbia.edu (I am interested in working with this).
 
 In this repository you will be able to find our report paper, the code (inside the folder `scripts`), the notebooks we used on Google Colaboratory and for the analysis, the results and weights of our models.
 
