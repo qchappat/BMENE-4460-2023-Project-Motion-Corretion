@@ -33,13 +33,13 @@ In this repository you will be able to find our report paper, the code (inside t
 # Commands to train, evaluate and analyze the models
 
 - [Prerequisites](#prerequisites)
-- [Data selection](#data-selection-and-preprocessing)
+- [Data selection](#data-selection)
 - [Generate motion artefacts & data preprocessing](#data-preprocessing)
 - [Train AFT](#train-aft)
 - [Train ResCUNet](#train-rescunet)
 - [Train AFT\_ResCUNet](#train-aft_rescunet)
 - [Train ResCUNet\_AFT](#train-rescunet_aft)
-- [Train ResCUNet\_AFT\_ResCUNet](#train-rescunet-aft_rescunet)
+- [Train ResCUNet\_AFT\_ResCUNet](#train-rescunet_aft_rescunet)
 - [Analysis](#analysis)
 
 ## Prerequisites
@@ -175,3 +175,8 @@ Task: MRI motion correction (sensor domain to image domain)
 python scripts/230401_Acc_ResCUNet_AFT_ResCUNet/train.py --data_csv data.csv --save_dir saved_model/230401_Acc_ResCUNet_AFT_ResCUNet --AFT saved_model/230401_Recon_AFT/weights.pt --ResCUNet saved_model/230401_Acc_ResCUNet_i2i/weights.pt --loss_func mse_loss --json_path data/data_to_original_dict.json --device cuda:0
 python scripts/230401_Acc_ResCUNet_AFT_ResCUNet/eval.py --data_csv data.csv --save_dir saved_model/230401_Acc_ResCUNet_AFT_ResCUNet --json_path data/data_to_original_dict.json --device cuda:0 --debug
 ```
+
+## Analysis
+
+To perform the analysis of your results, you can use the notebook `plotting_and_stats.ipynb` in the folder `\Notebooks\Analysis`.
+The notebook uses [spiketools](https://spiketools.github.io/spiketools/) to perform most of the analysis.
