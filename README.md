@@ -111,7 +111,7 @@ python scripts/preprocessing/add_max_value.py --input_csv data_T2_15T.csv --outp
 Task: MRI image reconstruction
 
 > The time for training epoch is fixed to 14 mins.
-> Modify the max_len argument of VolumeDataset in `train.py` so that validation epoch is around 1 min.
+> The validation time can be (xtremely) long depending on your split. We would advise you to reduce the size of the validation set to 5/10%. You should not modify the max_len argument of the DataLoader because you want to keep the classes balanced.
 > Use `--debug` for code testing.
 > Adapt the different arguments of the command (--data-csv and --save-dir) depending on the dataset you want to train on.
 
@@ -125,7 +125,7 @@ python scripts/230401_Recon_AFT/eval.py --data_csv data.csv --save_dir saved_mod
 Task: MRI motion correction (image domain to image domain)
 
 > The time for training epoch is fixed to 14 mins.
-> Modify the max_len argument of VolumeDataset in `train.py` so that validation epoch is around 1 min.
+> The validation time can be (xtremely) long depending on your split. We would advise you to reduce the size of the validation set to 5/10%. You should not modify the max_len argument of the DataLoader because you want to keep the classes balanced.
 > Use `--debug` for code testing.
 > Adapt the different arguments of the command (--data-csv and --save-dir) depending on the dataset you want to train on.
 
@@ -139,7 +139,7 @@ python scripts/230401_Acc_ResCUNet_i2i/eval.py --data_csv data.csv --save_dir sa
 Task: MRI motion correction (sensor domain to image domain)
 
 > The time for training epoch is fixed to 14 mins.
-> Modify the max_len argument of VolumeDataset in `train.py` so that validation epoch is around 1 min.
+> The validation time can be (xtremely) long depending on your split. We would advise you to reduce the size of the validation set to 5/10%. You should not modify the max_len argument of the DataLoader because you want to keep the classes balanced.
 > Use `--debug` for code testing.
 > Adapt the different arguments of the command (--data-csv and --save-dir) depending on the dataset you want to train on.
 
@@ -153,7 +153,7 @@ python scripts/230401_Acc_AFT_ResCUNet/eval.py --data_csv data.csv --save_dir sa
 Task: MRI motion correction (sensor domain to image domain)
 
 > The time for training epoch is fixed to 14 mins.
-> Modify the max_len argument of VolumeDataset in `train.py` so that validation epoch is around 1 min.
+> The validation time can be (xtremely) long depending on your split. We would advise you to reduce the size of the validation set to 5/10%. You should not modify the max_len argument of the DataLoader because you want to keep the classes balanced.
 > Use `--debug` for code testing.
 > Adapt the different arguments of the command (--data-csv and --save-dir) depending on the dataset you want to train on.
 
@@ -167,7 +167,7 @@ python scripts/230401_Acc_ResCUNet_AFT/eval.py --data_csv data.csv --save_dir sa
 Task: MRI motion correction (sensor domain to image domain)
 
 > The time for training epoch is fixed to 14 mins.
-> Modify the max_len argument of VolumeDataset in `train.py` so that validation epoch is around 1 min.
+> The validation time can be (xtremely) long depending on your split. We would advise you to reduce the size of the validation set to 5/10%. You should not modify the max_len argument of the DataLoader because you want to keep the classes balanced.
 > Use `--debug` for code testing.
 > Adapt the different arguments of the command (--data-csv and --save-dir) depending on the dataset you want to train on.
 
