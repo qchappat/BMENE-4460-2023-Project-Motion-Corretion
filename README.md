@@ -113,7 +113,7 @@ Task: MRI image reconstruction
 > The time for training epoch is fixed to 14 mins.
 > The validation time can be (xtremely) long depending on your split. We would advise you to reduce the size of the validation set to 5/10%. You should not modify the max_len argument of the DataLoader because you want to keep the classes balanced.
 > Use `--debug` for code testing.
-> Adapt the different arguments of the command (--data-csv and --save-dir) depending on the dataset you want to train on.
+> Adapt the different arguments of the command (--data-csv and --save-dir) depending on the dataset you want to train and test on.
 
 ```bash
 python scripts/230401_Recon_AFT/train.py --data_csv data.csv --save_dir saved_model/230401_Recon_AFT --loss_func mse_loss --device cuda:0
@@ -127,7 +127,7 @@ Task: MRI motion correction (image domain to image domain)
 > The time for training epoch is fixed to 14 mins.
 > The validation time can be (xtremely) long depending on your split. We would advise you to reduce the size of the validation set to 5/10%. You should not modify the max_len argument of the DataLoader because you want to keep the classes balanced.
 > Use `--debug` for code testing.
-> Adapt the different arguments of the command (--data-csv and --save-dir) depending on the dataset you want to train on.
+> Adapt the different arguments of the command (--data-csv and --save-dir) depending on the dataset you want to train and test on.
 
 ```bash
 python scripts/230401_Acc_ResCUNet_i2i/train.py --data_csv data_T1_3T.csv --save_dir saved_model/T1_3T/230401_Acc_ResCUNet_i2i --loss_func mse_loss --json_path data/data_to_original_dict.json --device cuda:0
@@ -141,7 +141,7 @@ Task: MRI motion correction (sensor domain to image domain)
 > The time for training epoch is fixed to 14 mins.
 > The validation time can be (xtremely) long depending on your split. We would advise you to reduce the size of the validation set to 5/10%. You should not modify the max_len argument of the DataLoader because you want to keep the classes balanced.
 > Use `--debug` for code testing.
-> Adapt the different arguments of the command (--data-csv and --save-dir) depending on the dataset you want to train on.
+> Adapt the different arguments of the command (--data-csv and --save-dir) depending on the dataset you want to train and test on.
 
 ```bash
 python scripts/230401_Acc_AFT_ResCUNet/train.py --data_csv data.csv --save_dir saved_model/230401_Acc_AFT_ResCUNet --AFT saved_model/230401_Recon_AFT/weights.pt --ResCUNet saved_model/230401_Acc_ResCUNet_i2i/weights.pt --loss_func mse_loss --json_path data/data_to_original_dict.json --device cuda:0
@@ -155,7 +155,7 @@ Task: MRI motion correction (sensor domain to image domain)
 > The time for training epoch is fixed to 14 mins.
 > The validation time can be (xtremely) long depending on your split. We would advise you to reduce the size of the validation set to 5/10%. You should not modify the max_len argument of the DataLoader because you want to keep the classes balanced.
 > Use `--debug` for code testing.
-> Adapt the different arguments of the command (--data-csv and --save-dir) depending on the dataset you want to train on.
+> Adapt the different arguments of the command (--data-csv and --save-dir) depending on the dataset you want to train and test on.
 
 ```bash
 python scripts/230401_Acc_ResCUNet_AFT/train.py --data_csv data.csv --save_dir saved_model/230401_Acc_ResCUNet_AFT --AFT saved_model/230401_Recon_AFT/weights.pt --loss_func mse_loss --json_path data/data_to_original_dict.json --device cuda:0
@@ -169,7 +169,7 @@ Task: MRI motion correction (sensor domain to image domain)
 > The time for training epoch is fixed to 14 mins.
 > The validation time can be (xtremely) long depending on your split. We would advise you to reduce the size of the validation set to 5/10%. You should not modify the max_len argument of the DataLoader because you want to keep the classes balanced.
 > Use `--debug` for code testing.
-> Adapt the different arguments of the command (--data-csv and --save-dir) depending on the dataset you want to train on.
+> Adapt the different arguments of the command (--data-csv and --save-dir) depending on the dataset you want to train and test on.
 
 ```bash
 python scripts/230401_Acc_ResCUNet_AFT_ResCUNet/train.py --data_csv data.csv --save_dir saved_model/230401_Acc_ResCUNet_AFT_ResCUNet --AFT saved_model/230401_Recon_AFT/weights.pt --ResCUNet saved_model/230401_Acc_ResCUNet_i2i/weights.pt --loss_func mse_loss --json_path data/data_to_original_dict.json --device cuda:0
