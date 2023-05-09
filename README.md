@@ -34,7 +34,7 @@ In this repository you will be able to find our report paper, the code (inside t
 
 - [Prerequisites](#prerequisites)
 - [Data selection](#data-selection)
-- [Generate motion artefacts & data preprocessing](#generate-motion-artefacts-&-data-preprocessing)
+- [Generate motion artefacts & data preprocessing](#generate-motion-artefacts--data-preprocessing)
 - [Train AFT](#train-aft)
 - [Train ResCUNet](#train-rescunet)
 - [Train AFT\_ResCUNet](#train-aft_rescunet)
