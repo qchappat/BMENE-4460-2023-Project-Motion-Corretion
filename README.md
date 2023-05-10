@@ -3,7 +3,7 @@ BMENE 4460 (2023) Project by Zachary ABESSERA, Quentin CHAPPAT and Nikhil KUMAR 
 
 # Project description
 
-This is the GitHub repository for the Project 'MRI Motion Detection and Correction with Complex-value AFT-Net'.
+This is the secret folder for the Project 'MRI Motion Detection and Correction with Complex-value AFT-Net'.
 
 As the title already clearly illustrates, our project consists in detecting and correcting brain MRI scans of humans from the [fastMRI dataset](https://fastmri.med.nyu.edu/).
 The added value of our project is that we use raw k-space data as input to correct MRI scans.
@@ -16,7 +16,7 @@ We made sure to keep our two classes (corrupted and uncorrupted) balanced in eac
 
 We trained our models using Google Colaboratory Virtual Machines with NVIDIA A100 GPUs (12 GB VRAM).
 
-We let the models (total of 15) trained until the end and our total cumulated training time amount is about 180 hours.
+We let most of the models trained until the end. Instead for the ResCUNet-AFT-ResCUNet models for each dataset that we stoped after 20 hours. Our total cumulated training time amount is about 180/200 hours.
 
 You will find in this repository the weights from our different training and the results of our models in the folder `saved_model`.
 
