@@ -47,7 +47,7 @@ In this repository you will be able to find our report paper, the code (inside t
 - Review the paper `paper/Motion-Correction.pdf`.
 - Download FastMRI Brain MRI Multicoil dataset from https://fastmri.med.nyu.edu/
 - Inside the `data` folder, put the folders `multicoil_train` and `multicoil_val` from the Google Drive.
-- Access the packages `pytorch-complex` and `vision-complex` via the [AFT-Net GitHub]{https://github.com/yanting-yang/AFT-Net}.
+- Access the packages `pytorch-complex` and `vision-complex` via the [AFT-Net GitHub](https://github.com/yanting-yang/AFT-Net).
 - Create an Anaconda environment using `environment_requirements.yml`.
 
 ## Data selection
