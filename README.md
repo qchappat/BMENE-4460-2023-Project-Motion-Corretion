@@ -18,7 +18,7 @@ We trained our models using Google Colaboratory Virtual Machines with NVIDIA A10
 
 We let most of the models trained until the end. But for the ResCUNet-AFT-ResCUNet models, for each dataset, we stoped after 20 hours. Our total cumulated training time amount is about 180/200 hours.
 
-You will find in this repository the results of our models in the folder `saved_model`. The weights ˋ.pt` files are available on [Google Drive](https://drive.google.com/drive/folders/1no-N-pFkZJ-hY-elccnGrinb7eQgbjWy). 
+You will find in this repository the results of our models in the folder `saved_model`. The weights `.pt` files are available on [Google Drive](https://drive.google.com/drive/folders/1no-N-pFkZJ-hY-elccnGrinb7eQgbjWy). 
 
 Note: Due to Google Drive storage limits I had to delete some weights files but contact me by email and I can find them on my hard drive. 
 
@@ -48,7 +48,7 @@ In this repository you will be able to find our report paper, the code (inside t
 
 - Review the paper `paper/Motion-Correction.pdf`.
 - Download FastMRI Brain MRI Multicoil dataset from https://fastmri.med.nyu.edu/
-- Inside the `data` folder, you will have to split your trainning and validation date into the folders `multicoil_train` and `multicoil_val`.
+- Inside the `data` folder, you will have to split your trainning and validation data into the folders `multicoil_train` and `multicoil_val`.
 - Access the packages `pytorch-complex` and `vision-complex` via the [AFT-Net GitHub](https://github.com/yanting-yang/AFT-Net).
 - Create an Anaconda environment using `environment_requirements.yml`.
 
