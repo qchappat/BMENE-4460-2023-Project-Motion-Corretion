@@ -19,7 +19,7 @@ We trained our models using Google Colaboratory Virtual Machines with NVIDIA A10
 We let most of the models trained until the end. But for the ResCUNet-AFT-ResCUNet models, for each dataset, we stoped after 20 hours. Our total cumulated training time amount is about 180/200 hours.
 
 You will find in this repository the results of our models in the folder `saved_model`. The weights `.pt` files are available on [Google Drive](https://drive.google.com/drive/folders/1no-N-pFkZJ-hY-elccnGrinb7eQgbjWy). 
-*Note: Due to Google Drive storage limits I had to delete some weights files but contact me by email and I can find them on my hard drive.*
+<br>*Note: Due to Google Drive storage limits I had to delete some weights files but contact me by email and I can find them on my hard drive.*
 
 We trained models on a mix of different datasets (T1 3T human MRI brain scans, T2 1.5 T human MRI brain scans and both combined).
 
