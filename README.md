@@ -3,7 +3,7 @@ BMENE 4460 (2023) Project by Zachary ABESSERA, Quentin CHAPPAT and Nikhil KUMAR 
 
 # Project description
 
-This is the secret folder for the Project 'MRI Motion Detection and Correction with Complex-value AFT-Net'.
+This is the repository for the Project 'MRI Motion Detection and Correction with Complex-value AFT-Net'.
 
 As the title already clearly illustrates, our project consists in detecting and correcting brain MRI scans of humans from the [fastMRI dataset](https://fastmri.med.nyu.edu/).
 The added value of our project is that we use raw k-space data as input to correct MRI scans.
@@ -16,19 +16,21 @@ We made sure to keep our two classes (corrupted and uncorrupted) balanced in eac
 
 We trained our models using Google Colaboratory Virtual Machines with NVIDIA A100 GPUs (12 GB VRAM).
 
-We let most of the models trained until the end. Instead for the ResCUNet-AFT-ResCUNet models for each dataset that we stoped after 20 hours. Our total cumulated training time amount is about 180/200 hours.
+We let most of the models trained until the end. But for the ResCUNet-AFT-ResCUNet models, for each dataset, we stoped after 20 hours. Our total cumulated training time amount is about 180/200 hours.
 
-You will find in this repository the weights from our different training and the results of our models in the folder `saved_model`.
+You will find in this repository the results of our models in the folder `saved_model`. The weights ˋ.pt` files are available on [Google Drive](https://drive.google.com/drive/folders/1no-N-pFkZJ-hY-elccnGrinb7eQgbjWy). 
+
+Note: Due to Google Drive storage limits I had to delete some weights files but contact me by email and I can find them on my hard drive. 
 
 We trained models on a mix of different datasets (T1 3T human MRI brain scans, T2 1.5 T human MRI brain scans and both combined).
 
 After all the training, we analyzed the statistical significance of our results to prove that our models were able to learn features to correct motion artefacts. You can check the paper inside the folder `paper` for more information.
 
-The improvements and interest of our project are that we take raw-k-space as input which means there is no preprocessing needed, no detection of movement need and no lost of data (like the phase).
+The improvements and interest of our project are that we take raw-k-space as input which means there is no preprocessing needed, no detection of movement needed and no lost of data (like the phase).
 
-The limitations of our models are that there in 2D and therefore our models has hard time correcting 3D types of motion. We think that if we were to use a 3D network, we could correct much more artefacts. If you are interested in performing this work, do not hesitate to contact qjc2002@columbia.edu (I am interested in working with this).
+The limitations of our models are that they are in 2D and therefore our models have a hard time correcting 3D types of motion. We think that if we were to use a 3D Complex U-Net, we could correct much more artefacts. If you are interested in performing this work, do not hesitate to contact qjc2002@columbia.edu (I am interested in working with this).
 
-In this repository you will be able to find our report paper, the code (inside the folder `scripts`), the notebooks we used on Google Colaboratory and for the analysis, the results and weights of our models.
+In this repository you will be able to find our report paper, the code (inside the folder `scripts`), the notebooks we used on Google Colaboratory and for the analysis, the results and weights of our models (via [Google Drive](https://drive.google.com/drive/folders/1no-N-pFkZJ-hY-elccnGrinb7eQgbjWy)).
 
 # Commands to train, evaluate and analyze the models
 
@@ -46,7 +48,7 @@ In this repository you will be able to find our report paper, the code (inside t
 
 - Review the paper `paper/Motion-Correction.pdf`.
 - Download FastMRI Brain MRI Multicoil dataset from https://fastmri.med.nyu.edu/
-- Inside the `data` folder, put the folders `multicoil_train` and `multicoil_val` from the Google Drive.
+- Inside the `data` folder, you will have to split your trainning and validation date into the folders `multicoil_train` and `multicoil_val`.
 - Access the packages `pytorch-complex` and `vision-complex` via the [AFT-Net GitHub](https://github.com/yanting-yang/AFT-Net).
 - Create an Anaconda environment using `environment_requirements.yml`.
 
